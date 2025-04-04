@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wgth@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: burlywood;
+  background-color: #081b29;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  color: yellowgreen;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+}
+
+span {
+  color: burlywood;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: purple;
+  text-decoration: dashed;
+  font-weight: 500;
+  margin-left: 33px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0077b5;
+}
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.home-details {
+  max-width: 600px;
+  margin-left: 40px;
+}
+
+.home-details h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.home-details h3 {
+  font-size: 31px;
+  font-weight: 700;
+  color: royalblue;
+}
+
+.home-details p {
+  font-size: 15px;
+  margin: 20px 0 40px;
+  line-height: 1.25;
+}
+
+.home-details .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.home-details .btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: darkorchid;
+  border: 2px solid darkorchid;
+  border-radius: 5px;
+  font-size: 20px;
+  color: moccasin;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.jesse-image .portfolio-image {
+  width: 300px;
+  height: 60vh;
+  display: flex;
+  border-radius: 80%;
+  overflow: hidden;
+  box-shadow: 0 0 30px darkorchid;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: darkorchid;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover:before {
+  width: 100%;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 40px;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-left: 350px;
+}
+
+.social-icons a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  color: darkorchid;
+  font-size: 20px;
+  text-decoration: none;
+  background: transparent;
+  transition: 0.3s ease;
+}
+.social-icons a:hover {
+  color: #0077b5;
+}
+
+.social-icons .fa-github:hover {
+  color: #333;
+}
+.social-icons .fa-linkedin:hover {
+  color: #0077b5;
+}
+.social-icons .fa-instagram:hover {
+  color: #e1306c;
+}
